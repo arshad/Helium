@@ -1,0 +1,61 @@
+-----------------------------------------------------------------------------------------------------------------------------
+INSTALLATION
+-----------------------------------------------------------------------------------------------------------------------------
+
+1. Create a new database 'helium' in mysql.
+2. Upload codebase in htdocs/www documentRoot directory
+3. Configure settings in config.php
+4. And you are ready to go!
+
+-----------------------------------------------------------------------------------------------------------------------------
+VERSION 1.1
+-----------------------------------------------------------------------------------------------------------------------------
+
+1. Ajax call for modules.
+Module methods can be called asynchronously from scripts. The first argument expected in the URI is 'ajax'.
+e.g ?m=ajax/job/toggle/1
+This URI will make an asynchronous call to the job class and call the toggle method for that class. The
+remaining arguments are passed as parameters in the toggle method.
+
+2. XML
+Modules now support XML feature. They work the same way as AJAX. The first argument expected in the URI is 'xml'.
+e.g ?m=xml/job/xmljob/1/random
+This URI will make a call to the job class. The xmljob method will be called. The remaining arguments will be passed
+as parameters to the xmljob method. Note that special methods must be written for modules to return XML data.
+
+Remote XML request can also be done the same way.
+
+3. Module custom stylesheets and scripts.
+Each module can now render its own set of custom stylesheets and scripts when the theme is rendered. Two variables are used
+to achieve this. The $Stylesheets and the $Scripts variables. Both are arrays.
+
+
+Example :
+For the Job Module, additional stylesheets are loaded by : $Stylesheets = array('job.css').
+Scripts are loaded by : $Scripts = array('dashboard.js');
+
+Scripts that have the same name as the class name will be loaded automatically. Example for the User module, file User.js
+is loaded automatically when the theme is rendered.
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+TODO
+-----------------------------------------------------------------------------------------------------------------------------
+
+1. AJAX job status toggle - Done in version 1.1
+2. Push notifications for new job post - Done in version 1.1
+
+-----------------------------------------------------------------------------------------------------------------------------
+KNOWN ISSUES
+-----------------------------------------------------------------------------------------------------------------------------
+
+No known issues.
+
+-----------------------------------------------------------------------------------------------------------------------------
+NOTES
+-----------------------------------------------------------------------------------------------------------------------------
+
+There are some dummy data in the database. (eg tuples in job table with date posted not set),
+we left these data for testing purporses.
+
+-----------------------------------------------------------------------------------------------------------------------------

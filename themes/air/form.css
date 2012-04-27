@@ -1,0 +1,125 @@
+form{
+    margin:20px 0px;
+}
+
+form label{
+    color:#33393C;
+    display:block;
+    font-size:1.2em;
+    font-size-adjust:none;
+    font-stretch:normal;
+    font-style:normal;
+    font-variant:normal;
+    font-weight:bold;
+    line-height:normal;
+    margin:0 0 5px;
+}
+
+form input{
+    border:1px solid #CCCCCC;
+    color:#454545;
+    display:block;
+    font-size:1.5em;
+    font-size-adjust:none;
+    font-stretch:normal;
+    font-style:normal;
+    font-variant:normal;
+    font-weight:normal;
+    line-height:normal;
+    padding:5px;
+    width:98%;
+}
+
+form input:focus{
+    border-color:#0099FF;
+}    
+
+form textarea{
+    border:1px solid #CCCCCC;
+    color:#454545;
+    display:block;
+    font-size:1.5em;
+    font-size-adjust:none;
+    font-stretch:normal;
+    font-style:normal;
+    font-variant:normal;
+    font-weight:normal;
+    line-height:normal;
+    padding:5px;
+    width:98%;
+    height:100px;
+}
+
+form textarea:focus{
+    border-color:#0099FF;
+}
+
+form em{
+    color:#5C6163;
+    display:block;
+    margin:5px 0px 30px;
+}
+
+form input.button{
+    border:1px solid #FFFFFF;
+    color:#FFFFFF;
+    display:block;
+    float:left;
+    font-size:1.1em;
+    font-weight:bold;
+    line-height:normal;
+    margin:0 10px 20px 0;
+    padding:6px 0;
+    text-transform:uppercase;
+    width:140px;
+    cursor : pointer;
+}
+
+form input.button:hover{
+    background : #4C4B4B;
+}    
+
+form input.submit{
+    background : #0099FF;
+}
+
+form input.submit:hover{
+    background : #E98214;
+}
+
+form input.checkbox{
+    display:inline;
+    margin:5px 10px 10px;
+    width:15px;
+}
+
+form select{
+    border:1px solid #CCCCCC;
+    color:#454545;
+    display:block;
+    font-size:1.5em;
+    font-size-adjust:none;
+    font-stretch:normal;
+    font-style:normal;
+    font-variant:normal;
+    font-weight:normal;
+    line-height:normal;
+    padding:5px;
+    width:48%;
+}
+
+#form-user-login input.text{
+    width : 500px;    
+}
+
+#form-user-registration input.text{
+    width : 700px;
+}
+
+#form-upload-cv input.text{
+    width:58%;
+}
+
+input.invalid{
+    border:1px solid #CC0000;
+}

@@ -1,0 +1,16 @@
+.view-content a.update-list{
+  background:transparent url(images/popup-inactive.png) no-repeat scroll center center;
+  color:#FFFFFF;
+  height:28px;
+  padding-top:5px;
+  position:absolute;
+  right:20px;
+  text-align:center;
+  top:-15px;
+  width:35px;
+  z-index:1000;
+}
+
+.view-content a.update-list.active{
+  background:transparent url(images/popup.png) no-repeat scroll center center;
+}

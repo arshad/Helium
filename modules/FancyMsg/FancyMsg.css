@@ -1,0 +1,11 @@
+.MessageBox{
+  display : none;
+  position : fixed;
+  top : 0px;
+  right : 0px;
+  margin : 10px;
+  padding : 10px 20px;
+  background : transparent url('images/bg.png') repeat;
+  color : #FFFFFF;
+  z-index:1000;
+}
