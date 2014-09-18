@@ -3,9 +3,9 @@
  * Configuration 
  */
 define('_DB_SERVER_', 'localhost');
-define('_DB_NAME_', 'mahamood_helium');
-define('_DB_USER_', 'mahamood_wydle');
-define('_DB_PASSWD_', 'wydle1234567');
+define('_DB_NAME_', 'helium');
+define('_DB_USER_', 'root');
+define('_DB_PASSWD_', 'root');
 define('_DB_PREFIX_', 'he_');
 
 //site name
